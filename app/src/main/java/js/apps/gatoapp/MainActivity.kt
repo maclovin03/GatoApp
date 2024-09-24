@@ -27,24 +27,14 @@ class MainActivity : ComponentActivity() {
         val viewModel by viewModels<GameViewModel>()
         setContent {
             GatoAppTheme {
-                GameScreen(viewModel)
+                    }
+                }
             }
         }
-    }
-}
 
-@Composable
-fun GameMenu(){
-    Column(Modifier.fillMaxSize()) {
-        Spacer(modifier = Modifier.height(16.dp))
-        Text("Juego del gato", fontSize = 24.sp)
-        Spacer(modifier = Modifier.height(16.dp))
-        Button(onClick = { /*TODO*/ }){
-            Text("Jugar")
+    @Composable
         }
-        Spacer(modifier = Modifier.height(16.dp))
-        Button(onClick = { /*TODO*/ }){
-            Text("Instrucciones")
-        }
+                Text("Instrucciones")
+            }
     }
 }

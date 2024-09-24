@@ -3,6 +3,6 @@ package js.apps.gatoapp
 data class Casilla(
     var posicion: Int,
     var ocupada: Boolean,
-    var jugador: String ?= null
+    var jugador: String ? = null
 
 )
